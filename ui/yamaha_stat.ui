@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YamahaStatistics</class>
+ <widget class="QMainWindow" name="YamahaStatistics">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1119</width>
+    <height>745</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>825</width>
+    <height>745</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Yamaha Statistik</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="graphView" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>99</y>
+      <width>1101</width>
+      <height>601</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>1101</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>11</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>15</number>
+    </attribute>
+   </widget>
+   <widget class="QGroupBox" name="grpPredefined">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>10</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Schnellzugriff</string>
+    </property>
+    <widget class="QPushButton" name="btnMountedComponents">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bauteile / Monat</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnComponentPerHour">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bauteile / h</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>20</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>50</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>566</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" columnminimumwidth="0,100,0,100,0,0,0">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblTable">
+       <property name="text">
+        <string>Tabelle:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="cmbTable"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="lblPlotType">
+       <property name="text">
+        <string>Plottyp:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QComboBox" name="cmbPlotType"/>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="lblDateStart">
+       <property name="text">
+        <string>Datum Start:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QDateEdit" name="dateEditStart"/>
+     </item>
+     <item row="0" column="6">
+      <widget class="QPushButton" name="btnUpdate">
+       <property name="text">
+        <string>Aktualisieren</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lblY">
+       <property name="text">
+        <string>Y:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="cmbY"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="lblHue">
+       <property name="text">
+        <string>Hue:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QComboBox" name="cmbHue"/>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="lblDateEnd">
+       <property name="text">
+        <string>Datum Ende:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QDateEdit" name="dateEditEnd"/>
+     </item>
+     <item row="1" column="6">
+      <widget class="QPushButton" name="btnSavePlot">
+       <property name="text">
+        <string>Speichern</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lblX">
+       <property name="text">
+        <string>X:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="cmbX"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="lblGroup">
+       <property name="text">
+        <string>Gruppierung:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QComboBox" name="cmbGroup"/>
+     </item>
+     <item row="2" column="5">
+      <widget class="QPushButton" name="btnToggleView">
+       <property name="text">
+        <string>Plot / Tabelle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QPushButton" name="btnPrintPlot">
+       <property name="text">
+        <string>Drucken</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="btnSetDate7">
+       <property name="text">
+        <string>Eine Woche</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>253</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2" columnminimumwidth="0,100,0">
+     <property name="verticalSpacing">
+      <number>10</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblFilter1">
+       <property name="text">
+        <string>Filter 1:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="cmbFilter1"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="entFilter1"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lblFilter2">
+       <property name="text">
+        <string>Filter 2:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="cmbFilter2"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="entFilter2"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lblFilter3">
+       <property name="text">
+        <string>Filter 3:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="cmbFilter3"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="entFilter3"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1119</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

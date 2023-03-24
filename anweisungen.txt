@@ -1,0 +1,32 @@
+# compile
+pyinstaller "mySpec.spec" TC-Werkzeug.py
+
+
+
+# .ui to .py
+pyuic6 ui/TC-Werkzeug.ui -o ui/main_gui.py
+pyuic6 ui/gerber_view.ui -o ui/gerber_view.py
+pyuic6 ui/yamaha_stat.ui -o ui/yamaha_stat.py
+
+
+
+COLORS = {
+    'black': (0.0, 0.0, 0.0),
+    'white': (1.0, 1.0, 1.0),
+    'red': (1.0, 0.0, 0.0),
+    'green': (0.0, 1.0, 0.0),
+    'blue': (0.0, 0.0, 1.0),
+    'fr-4': (0.290, 0.345, 0.0),
+    'silk': (0.86, 0.86, 0.86),
+    'green soldermask': (0.0, 0.412, 0.278),
+    'blue soldermask': (0.059, 0.478, 0.651),
+    'red soldermask': (0.968, 0.169, 0.165),
+    'black soldermask': (0.298, 0.275, 0.282),
+    'purple soldermask': (0.2, 0.0, 0.334),
+    'white soldermask': (0.96, 0.96, 0.96).
+    'enig copper': (0.98, 0.87, 0.56),
+    'hasl copper': (0.70, 0.71, 0.73),
+    'osp copper': (98, 0.65, 0.53),
+    'silver copper': (0.95, 0.97, 0.96),
+    'flex': (0.92, 0.51, 0.0)
+}
