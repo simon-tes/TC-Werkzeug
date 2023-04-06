@@ -885,7 +885,7 @@ class Ui(QMainWindow, mainGui):
             
             for m in range(1, 11):
                 n_blocks = 0
-                file = os.path.join(r'C:\YFacT', 'Line' + str(line), 'No' + str(m),
+                file = os.path.join(r'C:\IntelligentFactory\YSUP', 'Line' + str(line), 'No' + str(m),
                     programName + '.ygx')
                 if not os.path.exists(file): continue
 
@@ -2675,7 +2675,7 @@ class Ui(QMainWindow, mainGui):
         def loadPlanFile(path):
             toReplace = {'\n': '', '<': '', '>': ''}
             progNames = []
-            src = 'C:/YFacT/Line1/'
+            src = 'C:IntelligentFactory/YSUP/Line1'
             line = '1'
             with open(path, 'r', encoding='utf-8') as file:
                 for row in file:
@@ -2715,7 +2715,7 @@ class Ui(QMainWindow, mainGui):
         #filedialog
         #die Dateiendung bestimmt, wie mit der Datei verfahren wird.
         fileName = QFileDialog.getOpenFileName(self,
-            'QFileDialog.getOpenFileName()', 'C:/YFacT/PLAN', 
+            'QFileDialog.getOpenFileName()', 'C:/IntelligentFactory/YSUP/PLAN', 
             'Plan File (*.plan)')
 
         if fileName[0] == '':
